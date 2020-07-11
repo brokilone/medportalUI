@@ -1,17 +1,17 @@
 html,body{
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
+    margin: 0;
 }
 
 header {
     background-color: white;
     margin-top:35px;
     position: relative;
-    height: 200px;
-
+    height: 165px;
 }
 .fixed-container {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
 }
 hr{
@@ -157,9 +157,68 @@ div.dactive span::after{
     background-color:#6c6c6c;
 }
 
-@media only screen and (min-width : 768px) {
+main{
+    background-color: #dbe1ee;
+    height: 635px;
+}
+
+footer{
+    height: 900px;
+    background-color: #171717;
+}
+footer .fixed-container{
+    height: 800px;
+}
+#copy {
+    background-color: #1a1a1a;
+    color: #615555;
+    height: 70px;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.left-column, .next-column {
+    float: left;
+    color: white;
+    margin-right: 200px;
+}
+
+h3{
+    padding-top: 60px;
+    margin-bottom: 50px;
+}
+.left-column ul{
+    list-style-type: none;
+    padding-left: 80px;
+    margin-left: 0;
+    background-image: url("img/mail-footer.png");
+    background-repeat: no-repeat;
+}
+.left-column a, .next-column a{
+    color: white;
+    text-decoration: none;
+}
+#phone-footer{
+    margin-top: 55px;
+    background-image: url("img/phone-footer.png");
+    background-repeat: no-repeat;
+    padding-left: 80px;
+    display: block;
+    height: 42px;
+}
+.next-column ul{
+    list-style-image: url("img/point.png");
+    list-style-position: inside;
+    margin-left: 0;
+    background-repeat: no-repeat;
+    padding-left: 0;
+}
+.next-column li, .left-column li{
+    padding-bottom: 22px;
+}
+@media only screen and (min-width : 860px) {
     .fixed-container {
-        min-width: 780px;
+        width: 80%;
         margin: 0 auto;
     }
     div.toggle{
@@ -168,6 +227,11 @@ div.dactive span::after{
     .menu{
         display: block;
         width: 100%;
+    }
+    nav ul{
+        padding-left: 0;
+        margin-top: 30px;
+        margin-bottom: 35px;
     }
     nav li{
         text-decoration: none;
@@ -196,6 +260,12 @@ div.dactive span::after{
     }
     .contacts{
         font-weight: bold;
+    }
+    footer{
+        height: 600px;
+    }
+    footer .fixed-container{
+        height: 500px;
     }
 }
 
