@@ -163,11 +163,11 @@ main{
 }
 
 footer{
-    height: 900px;
+    height: 950px;
     background-color: #171717;
 }
 footer .fixed-container{
-    height: 800px;
+    height: 850px;
 }
 #copy {
     background-color: #1a1a1a;
