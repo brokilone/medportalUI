@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="basic-styles.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic"
           rel="stylesheet">
+
     <script src="default.js"></script>
     <title>Медицинский портал</title>
 </head>
@@ -28,14 +30,107 @@
                 <span id="ham"></span>
             </div>
             <nav><ul id="menu" class="menu">
-                <li><a href="#" class="checked-a">Главная</a></li>
-                <li><a href="#">Я врач</a></li>
-                <li><a href="#">Я пациент</a></li>
-                <li><a href="#">Связаться</a></li>
+                <li><a href="#" class="checked-a">Личный кабинет</a></li>
+                <li><a href="#">Выйти</a></li>
             </ul></nav>
         </div>
     </header>
     <main>
+        <div class="fixed-container">
+            <h1>Заголовок 1-го уровня</h1>
+            <h2>Заголовок 2-го уровня</h2>
+            <h3>Заголовок 3-го уровня</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus
+                error sit voluptatem accusantium doloremque
+                laudantium, totam rem aperiam, eaque ipsa quae
+                ab illo inventore veritatis et quasi architecto
+                beatae vitae dicta sunt explicabo. </p>
+            <button>Базовая кнопка</button>
+            <p>Sed ut perspiciatis unde omnis iste natus
+                error sit voluptatem accusantium doloremque
+                laudantium, totam rem aperiam, eaque ipsa quae
+                ab illo inventore veritatis et quasi architecto
+                beatae vitae dicta sunt explicabo. </p>
+            <a href="#">Базовый стиль ссылки</a>
+            <ul>
+                <li>Элемент 1</li>
+                <li>Элемент 2</li>
+                <li>Элемент 3</li>
+            </ul>
+            <ol>
+                <li>Элемент 1</li>
+                <li>Элемент 2</li>
+                <li>Элемент 3</li>
+            </ol>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Шапка</th>
+                        <th>Шапка</th>
+                        <th>Шапка</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                </tr>
+                <tr>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                </tr>
+                <tr>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                </tr>
+                <tr>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                    <td>Ячейка</td>
+                </tr>
+
+                </tbody>
+            </table>
+
+            <form>
+                <h3>Основные данные</h3>
+
+                <label>* Фамилия,имя, отчество:</label><br><br>
+                <input type="text" name="name" required="required" size="50"><br><br>
+
+                <label>Дата рождения:</label><br><br>
+                <input type="date" name="date"><br><br>
+
+                <label>Пол:</label><br><br>
+                <input type="radio" name="gender" id="male"> <label for="male">мужской</label>
+                <input type="radio" name="gender" id="female"> <label for="female">женский</label><br><br>
+
+                <h3>Данные для создания личного кабинета</h3>
+
+                <label>* Адрес электронной почты:</label><br><br>
+                <input type="email" name="email" required="required" size="50"><br><br>
+
+                <label>* Пароль для создания личного кабинета:</label><br><br>
+                <input type="password" name="password" required="required" size="50"><br><br>
+
+                <label>* Дополнительная информация (не более 1000 символов):</label><br><br>
+                <textarea required="required" cols="50" rows="10"></textarea><br><br>
+
+                <h3>Дополнительные опции</h3>
+                <input type="checkbox" name="option1" id="option1"><label for="option1">Опция 1</label><br>
+                <input type="checkbox" name="option2" id="option2" checked="checked"><label for="option2">Опция 2</label><br>
+                <input type="checkbox" name="option3" id="option3"><label for="option3">Опция 3</label><br>
+
+                <hr>
+                <input type="submit" value="Отправить">
+                <hr>
+                <p>* Поля, отмеченные звездочкой, являются обязательными для заполнения</p>
+                <br><br>
+            </form>
+        </div>
 
     </main>
     <footer>
@@ -59,8 +154,6 @@
                 <h3>Быстрые ссылки</h3>
                 <ul>
                     <li><a href="#">&nbsp;&nbsp;Главная</a></li>
-                    <li><a href="#">&nbsp;&nbsp;Я врач</a></li>
-                    <li><a href="#">&nbsp;&nbsp;Я пациент</a></li>
                     <li><a href="#">&nbsp;&nbsp;Связаться</a></li>
                 </ul>
             </section>

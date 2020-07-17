@@ -159,7 +159,8 @@ div.dactive span::after{
 
 main{
     background-color: #dbe1ee;
-    height: 635px;
+    min-height: 635px;
+    padding-bottom: 50px;
 }
 
 footer{
@@ -183,12 +184,15 @@ footer .fixed-container{
     margin-right: 200px;
 }
 
-h3{
+.left-column h3, .next-column h3{
     padding-top: 60px;
     margin-bottom: 50px;
+    margin-top: 18px;
+    margin-left: 0;
 }
 .left-column ul{
     list-style-type: none;
+    list-style-image: none;
     padding-left: 80px;
     margin-left: 0;
     background-image: url("img/mail-footer.png");
